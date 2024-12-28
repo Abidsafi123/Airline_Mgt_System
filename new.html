@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+         /* Reset Styles */
+body, h2, label, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+label i {
+    margin-right: 8px;
+    color: #000; /* Changed icon color to black */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff4d4f;
+    box-shadow: 0 0 5px rgba(255, 77, 79, 0.5);
+}
+
+/* Button */
+.btn-submit {
+    background: blue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: #e04446;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px 20px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, .btn-submit {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <!-- Contact Field -->
+            <div class="form-group">
+                <label for="contact"><i class="fas fa-phone"></i> Contact</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+            </div>
+            <!-- Address Field -->
+            <div class="form-group">
+                <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+            <!-- Date of Registration -->
+            <div class="form-group">
+                <label for="date"><i class="fas fa-calendar-alt"></i> Date of Registration</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

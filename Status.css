@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.flight-status {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.status-item {
+    margin-bottom: 15px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.status-icon {
+    margin-right: 10px;
+    color: #4CAF50; /* Green for On Time */
+}
+
+#flight-status {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#updated-time {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.fas {
+    font-size: 20px;
+}
+
+.fas.fa-plane-departure {
+    color: #4CAF50;
+}
